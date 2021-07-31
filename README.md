@@ -4,4 +4,6 @@
 
 ### What to change
 
+- Root document title
 - change /data/data.json
+- Firebase
