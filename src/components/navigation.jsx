@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import JsonData from "../data/data.json";
+
 export const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -15,9 +18,10 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            React Landing Page
-          </a>{" "}
+
+          <Link to="/" className="navbar-brand page-scroll">
+            {JsonData.AppName}
+          </Link>
         </div>
 
         <div
@@ -26,40 +30,36 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
-                Features
-              </a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
-                About
-              </a>
+              <Link to="/privacy">Privacy Policy</Link>
             </li>
-            <li>
+            {/* <li>
               <a href="#services" className="page-scroll">
                 Services
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="#portfolio" className="page-scroll">
                 Gallery
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="#testimonials" className="page-scroll">
                 Testimonials
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="#team" className="page-scroll">
                 Team
               </a>
-            </li>
-            <li>
-              <a href="#contact" className="page-scroll">
-                Contact
+            </li> */}
+            {/* <li>
+              <a href="#privacy" className="page-scroll">
+                Privacy
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
